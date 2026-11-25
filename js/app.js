@@ -172,7 +172,8 @@
         <h3>Desempeño por eje temático</h3>
         ${bars(Object.keys(EJES).map(k => { const s = stats(q => q.eje === k); return { l: EJES[k].ic + ' ' + EJES[k].n, s: s.n ? `(${s.n})` : '', v: s.p, na: !s.n }; }), { th: 65 })}
         <p class="small muted">La línea vertical marca el mínimo aprobatorio (65).</p>
-      </div>`;
+      </div>
+      ${window.VISITAS && window.VISITAS.codigo ? `<p class="small muted">🔒 Este sitio cuenta visitas de forma anónima (qué secciones se abren). Sus respuestas, puntajes y avances se quedan solo en este dispositivo.</p>` : ''}`;
     const w = $('#goWeak'); if (w) w.onclick = () => startPractice({ ejes: [ejeStats[0].k], n: 10 });
   };
 

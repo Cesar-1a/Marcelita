@@ -32,3 +32,6 @@ C.P. arts. 127, 214, 264 y 266, Código Penal (peculado, cohecho, concusión, pr
 Ley 1931 de 2018, Ley 2273 de 2022, y los ítems conceptuales de argumentación y planeación.
 
 Al agregar un archivo de banco nuevo, inclúyalo en `index.html` antes de `js/app.js` y mida el sesgo de longitud.
+
+## Contador de visitas
+`js/visitas.js` envía a GoatCounter (`https://simuladorpgn.goatcounter.com`) solo la sección abierta, con el prefijo `/143/` para separar esta convocatoria. Para apagarlo, deje `codigo: ''`.
