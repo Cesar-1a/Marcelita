@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulador PGN 2026 · Convocatoria 143</title>
+<meta name="description" content="Simulador de pruebas escritas estilo Universidad de Antioquia para la Convocatoria 143-2026 de la Procuraduría (Profesional Universitario 3PU-17, Delegadas con Funciones Mixtas).">
+<link rel="stylesheet" href="css/app.css?v=2">
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+  <div class="brand">
+    <span class="brand-mark">PGN</span>
+    <div>
+      <strong>Simulador Mérito 2026</strong>
+      <small>Conv. 143 · Prof. Universitario 3PU-17 · Delegadas mixtas</small>
+    </div>
+  </div>
+  <button class="theme-btn" id="themeBtn" aria-label="Cambiar tema">◐</button>
+</header>
+
+<nav class="sidenav" id="sidenav">
+  <a href="#inicio" data-v="inicio">🏠 Inicio</a>
+  <a href="#simulacro" data-v="simulacro">📝 Simulacro de examen</a>
+  <a href="#practica" data-v="practica">🎯 Práctica por eje</a>
+  <a href="#comportamental" data-v="comportamental">🧭 Competencias comportamentales</a>
+  <a href="#repaso" data-v="repaso">🔁 Repaso inteligente</a>
+  <a href="#estadisticas" data-v="estadisticas">📈 Estadísticas</a>
+  <a href="#estudio" data-v="estudio">📚 Guía de estudio</a>
+  <a href="#udea" data-v="udea">🎓 Cómo pregunta la UdeA</a>
+  <a href="#calculadora" data-v="calculadora">🧮 Calculadora de puntaje</a>
+  <a href="#datos" data-v="datos">💾 Mis datos y banco</a>
+</nav>
+
+<main id="app" tabindex="-1"></main>
+
+<!-- Configuración y ajustes de opciones (antes de los bancos) -->
+<script src="js/config.js?v=2"></script>
+<script src="js/ajuste_opciones.js?v=2"></script>
+<script src="js/ajuste388.js?v=2"></script>
+<script src="js/ajuste388b.js?v=2"></script>
+<script src="js/ajuste143.js?v=2"></script>
+<!-- Núcleo general: compartido con las convocatorias 217 y 388 -->
+<script src="js/banco_general.js?v=2"></script>
+<script src="js/banco_general2.js?v=2"></script>
+<script src="js/banco_general3.js?v=2"></script>
+<!-- Reutilizados de la 217 (constitucional, transparencia, contratación) y de la 388 (presupuesto, proyectos).
+     Los ejes que no están en config.js se descartan solos. -->
+<script src="js/banco_especifico1.js?v=2"></script>
+<script src="js/banco_especifico2.js?v=2"></script>
+<script src="js/banco_especifico3.js?v=2"></script>
+<script src="js/banco_especifico4.js?v=2"></script>
+<script src="js/banco388_a.js?v=2"></script>
+<script src="js/banco388_d.js?v=2"></script>
+<script src="js/banco388_e.js?v=2"></script>
+<script src="js/banco388_f.js?v=2"></script>
+<!-- Núcleo específico propio de la Convocatoria 143 -->
+<script src="js/banco143_a.js?v=2"></script>
+<script src="js/banco143_b.js?v=2"></script>
+<script src="js/banco143_comp.js?v=2"></script>
+<script src="js/app.js?v=2"></script>
+</body>
+</html>
